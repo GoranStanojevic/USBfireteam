@@ -1,0 +1,144 @@
+body {
+  background-image: url("../img/bg-image16.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.home-page {
+  background-image: url("../img/Clan1.jpg");
+}
+
+h1{
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+#h1 {
+  margin: 4% 0;
+}
+.row h2 {
+  text-align: center;
+  margin: 5% 0px;
+}
+.contact {
+  background-image: url("../img/bg-image32.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form-group {
+  margin:2% 2%;
+}
+
+#contact-form {
+}
+.podaci p {
+  color: white;
+  padding: 2% 10%;
+  text-align: justify;
+  font-size: 1.2em;
+
+}
+h2 {
+  color: yellow;
+  padding-bottom: 5%;
+}
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .8s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Read more...';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Read less...';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  color:yellow;
+  padding-left: 55px;
+  padding-bottom: 40px;
+  font-size: 1.8em;
+}
+.read-more-trigger:hover {
+  color: orange;
+}
+textarea {
+	resize: none;
+}
+.form-label {
+	font-size: 1.3em;
+	color: yellow;
+	display: block;
+	opacity: 1;
+	-webkit-transition: .333s ease top, .333s ease opacity;
+  transition: .333s ease top, .333s ease opacity;
+  margin: 5% 3%;
+}
+.form-control {
+	border-radius: 3px;
+	border-color: #ccc;
+   	border-width: 0 1px 2px 0;
+   	border-style: solid solid solid none;
+     box-shadow: none;
+     max-width: 100%;
+     background-color: transparent;  
+     margin: 3% 0; 
+}
+.form-control:focus {
+	box-shadow: none;
+	border-color: #5e9bfc;
+}
+.js-hide-label {
+	opacity: 0; 	
+}
+.js-unhighlight-label {
+	color: #999 
+}
+.btn-start-order {
+	background: 0 0 yellow;
+    border: 1px solid #2f323a;
+    border-radius: 3px;
+    color: #2f323a;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: inherit;
+    margin: 30px 0;
+    padding: 10px 50px;
+    text-transform: uppercase;
+    transition: all 0.25s ease 0s;
+    color: black;
+    border-radius: 10px;
+}
+.btn-start-order:hover,.btn-start-order:active, .btn-start-order:focus {
+  border-color: #5e9bfc;
+  background: 0 0 rgb(255, 136, 0);
+  border-radius: 10px;
+	color: red;
+}
+@media screen and (max-width: 519px) and (min-width: 350px) {
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10%;
+  }
+
+}

@@ -1,0 +1,45 @@
+body {
+  background-image: url("../img/Clan11.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.home-page {
+  background-image: url("../img/bg-image9.jpg");
+}
+
+/* gallery */
+
+.gallery {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    margin: 3% 0;
+  }
+
+  .gallery a {
+    margin: 0.8%;
+  }
+  
+  .gallery img {
+    height: 200px;
+    width: 300px;
+    opacity: 0.85;
+    border-radius: 15px 20px;
+    border: 1px solid yellow;
+  }
+
+  .gallery img:hover{
+    box-shadow: 0 0 45px rgba(247, 190, 5, 0.863);
+    border: none;
+    transition:all 1s;
+    -webkit-transition: all 1s;
+    z-index: 100;
+    animation-duration: 2s;
+    opacity: 1;
+    transform: rotate(3deg);
+  }
+

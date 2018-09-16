@@ -1,0 +1,127 @@
+    body {
+        background-image: url("../img/bg-image1.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .home-page {
+        background-image: url("../img/Sale2.jpg");
+      }
+    /* strana team */
+
+    .container {
+        display:flex;  
+        align-items: flex-start;
+        background: black;
+        margin-top: 10%;
+        padding: 0px;
+
+    }
+    .profile-pic {
+        width: 400px;
+        height: 300px;
+        flex-grow: 1;
+        margin-top: 50px;
+    }
+    .profile-pic img {
+        width: 100%;
+        height: 100%;
+    }
+    .profile-pic h4 {
+        text-align: center;
+        color: yellow;
+        margin-top: 3%;
+    }
+
+    
+      
+    .team-video {
+        width:100%;
+        height: 400px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        flex-grow: 2;
+    }
+    .team-video video {
+
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        object-fit: fill;
+        padding-top: -12px;
+        padding-bottom: -12px;
+    }
+    .team-video img {
+        max-height: 100%;
+        min-width: 100%;
+        padding: 50px 0 ;
+        display: block;
+    }
+    .team-video img:hover {       
+            -webkit-animation: T-animation 3s linear normal;
+               -moz-animation: T-animation 3s linear normal;
+                -ms-animation: T-animation 3s linear normal;
+                 -o-animation: T-animation 3s linear normal;
+                    animation: T-animation 3s linear normal;
+       
+            width: 200px;
+         }
+       
+         @-webkit-keyframes T-animation {
+             0% {
+               -webkit-transform: rotateY(0deg);
+             }
+             100% {
+               -webkit-transform: rotateY(360deg);
+             }
+         }
+         @-moz-keyframes T-animation {
+             0% {
+               -moz-transform: rotateY(0deg);
+             }
+             100% {
+               -moz-transform: rotateY(360deg);
+             }
+         }
+         @-ms-keyframes T-animation {
+             0% {
+               -ms-transform: rotateY(0deg);
+             }
+             100% {
+               -ms-transform: rotateY(360deg);
+             }
+         }
+         @-o-keyframes T-animation {
+             0% {
+               -o-transform: rotateY(0deg);
+             }
+             100% {
+               -o-transform: rotateY(360deg);
+             }
+         }
+         @keyframes T-animation {
+             0% {
+               transform: rotateY(0deg);
+             }
+             100% {
+               transform: rotateY(360deg);
+             }
+         }
+       
+    
+    @media screen and (max-width: 519px) and (min-width: 350px) {
+        .team-video {
+            display: none;
+        }
+        .profile-pic h4 {
+            background: black;
+            margin-top: 0;
+            margin-bottom: 3%;
+            padding: 5% 0px;
+        }
+        .container {
+            margin-bottom: 30%;
+        }
+    }
